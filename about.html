@@ -9,6 +9,25 @@
       font-family: Arial, sans-serif;
       line-height: 1.6;
     }
+    .container {
+        display: flex;
+    }
+    .sidebar {
+        background-color: #f0f0f0;
+        width: 200px;
+        padding: 40px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .main-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
     .contact-info {
       margin-bottom: 20px;
     }
@@ -30,61 +49,82 @@
   </style>
 </head>
 <body>
-  <div class="contact-info">
-    <p>Sai Sunandh Ramayanam<br>
-    +1 928-550-2812 | <a href="mailto:saisunandhramayanam@gmail.com">saisunandhramayanam@gmail.com</a> | <a href="https://linkedin.com/in/sai-sunandh-ramayanam" target="_blank">linkedin.com/in/sai-sunandh-ramayanam</a></p>
-  </div>
-  <div class="section">
-    <h2 class="section-title">Education</h2>
-    <div class="section-content">
-      <p>Master of Science: Computer Science, Northern Arizona University, May 2024</p>
-      <p>Bachelor of Engineering: Electrical and Electronics Engineering, Jawaharlal Nehru Technological University, July 2021</p>
+  <div class="container">
+    <div class="sidebar">
+        <div class="logo">
+            <a href="index.html"><i class="fas fa-home"></i></a>
+        </div>
+        <div class="logo">
+            <a href="about.html"><i class="fas fa-user"></i></a>
+        </div>
+        <div class="logo">
+            <a href="#skills"><i class="fas fa-cogs"></i></a>
+        </div>
+        <div class="logo">
+            <a href="#experience"><i class="fas fa-briefcase"></i></a>
+        </div>
+        <div class="logo">
+            <a href="#projects"><i class="fas fa-project-diagram"></i></a>
+        </div>
     </div>
-  </div>
-  <div class="section">
-    <h2 class="section-title">Skills & Tools</h2>
-    <div class="section-content">
-      <p>Languages: Java, Python, R, C, C++</p>
-      <p>Data Management & Analytics: MySQL, Data Warehousing, Python Data Analytics libraries, Data Visualization libraries</p>
-      <p>Web Development: HTML, CSS</p>
-      <p>Tools: MS Excel, Microsoft Access, RStudio, Python IDLE, Deepstate</p>
-    </div>
-  </div>
-  <div class="section">
-    <h2 class="section-title">Computer Science Projects</h2>
-    <div class="section-content">
-      <p>Building a new data warehouse using dimensional modeling: Microsoft Access, MySQL</p>
-      <p>Advanced Software Assurance testing using Deepstate: C++</p>
-      <p>Covid Testing unit web application using Django: Python, HTML, CSS</p>
-    </div>
-  </div>
-  <div class="section">
-    <h2 class="section-title">Work Experience</h2>
-    <div class="section-content">
-      <p>Teaching Assistant, SICCS Department, NAU, Flagstaff: September 2023 – December 2023</p>
-      <p>Teaching Assistant, Center for International Education, NAU, Flagstaff: September 2023 – December 2023</p>
-      <p>Software Application Developer, Accenture Solutions Pvt. Ltd., : September 2021 – December 2022</p>
-    </div>
-  </div>
-  <div class="section">
-    <h2 class="section-title">Awards & Involvement</h2>
-    <div class="section-content">
-      <p>Volunteer, NAU Student Ambassador, NAU, August 2023</p>
-      <p>Class Representative, Pragati Engineering College, JNTUK, India, August 2021</p>
-      <p>Student Coordinator, Technical Fest, Pragati Engineering College</p>
-    </div>
-  </div>
-  <div class="section">
-    <h2 class="section-title">About Me</h2>
-    <div class="section-content">
-      <p>With a Master of Science in Computer Science from Northern Arizona University, supplemented by hands-on experience as a Software Application Developer at Accenture Solutions Pvt. Ltd., I am confident in my ability to contribute effectively to your team.</p>
-      <p>My educational background has equipped me with a solid foundation in computer science principles and programming languages, including Java, Python, R, C, and C++. Moreover, my coursework and projects have honed my skills in data management, analytics, and web development.</p>
-      <p>Notably, I have led initiatives such as building a data warehouse using dimensional modeling, which involved leveraging tools like Microsoft Access and MySQL to analyze healthcare datasets sourced from platforms like Kaggle.</p>
-      <p>In my previous role at Accenture Solutions Pvt. Ltd., I served as a SAP Customer Service Consultant for a Europe-based pharmaceutical organization. During my tenure, I demonstrated my ability to prepare comprehensive test plans, execute end-to-end functional testing, and deliver defect-free projects on schedule.</p>
-      <p>Additionally, I analyzed data from data warehouses to derive actionable insights, contributing to the organization's strategic decision-making process. Moreover, I took an active role in mentoring new team members through knowledge transfer sessions, fostering a collaborative and growth-oriented environment.</p>
-      <p>Furthermore, my experience as a Teaching Assistant at Northern Arizona University has enhanced my communication and organizational skills. In this capacity, I provided support to students in courses such as Data Structures and Principles of Programming Language, fostering their understanding of complex concepts through individual tutoring sessions and grading assistance.</p>
-      <p>Moreover, my involvement as a Volunteer Student Ambassador underscores my commitment to academic excellence and community engagement.</p>
-      <p>I am particularly drawn to your Company due to its reputation for innovation and commitment to driving positive change through technology. I am eager to leverage my skills and experience to contribute to your team's success while continuing to grow both personally and professionally.</p>
+    <div class="main-content">
+      <div class="contact-info">
+        <p>Sai Sunandh Ramayanam<br>
+        +1 928-550-2812 | <a href="mailto:saisunandhramayanam@gmail.com">saisunandhramayanam@gmail.com</a> | <a href="https://linkedin.com/in/sai-sunandh-ramayanam" target="_blank">linkedin.com/in/sai-sunandh-ramayanam</a></p>
+      </div>
+      <div class="section">
+        <h2 class="section-title">Education</h2>
+        <div class="section-content">
+          <p>Master of Science: Computer Science, Northern Arizona University, May 2024</p>
+          <p>Bachelor of Engineering: Electrical and Electronics Engineering, Jawaharlal Nehru Technological University, July 2021</p>
+        </div>
+      </div>
+      <div class="section">
+        <h2 class="section-title">Skills & Tools</h2>
+        <div class="section-content">
+          <p>Languages: Java, Python, R, C, C++</p>
+          <p>Data Management & Analytics: MySQL, Data Warehousing, Python Data Analytics libraries, Data Visualization libraries</p>
+          <p>Web Development: HTML, CSS</p>
+          <p>Tools: MS Excel, Microsoft Access, RStudio, Python IDLE, Deepstate</p>
+        </div>
+      </div>
+      <div class="section">
+        <h2 class="section-title">Computer Science Projects</h2>
+        <div class="section-content">
+          <p>Building a new data warehouse using dimensional modeling: Microsoft Access, MySQL</p>
+          <p>Advanced Software Assurance testing using Deepstate: C++</p>
+          <p>Covid Testing unit web application using Django: Python, HTML, CSS</p>
+        </div>
+      </div>
+      <div class="section">
+        <h2 class="section-title">Work Experience</h2>
+        <div class="section-content">
+          <p>Teaching Assistant, SICCS Department, NAU, Flagstaff: September 2023 – December 2023</p>
+          <p>Teaching Assistant, Center for International Education, NAU, Flagstaff: September 2023 – December 2023</p>
+          <p>Software Application Developer, Accenture Solutions Pvt. Ltd., : September 2021 – December 2022</p>
+        </div>
+      </div>
+      <div class="section">
+        <h2 class="section-title">Awards & Involvement</h2>
+        <div class="section-content">
+          <p>Volunteer, NAU Student Ambassador, NAU, August 2023</p>
+          <p>Class Representative, Pragati Engineering College, JNTUK, India, August 2021</p>
+          <p>Student Coordinator, Technical Fest, Pragati Engineering College</p>
+        </div>
+      </div>
+      <div class="section">
+        <h2 class="section-title">About Me</h2>
+        <div class="section-content">
+          <p>With a Master of Science in Computer Science from Northern Arizona University, supplemented by hands-on experience as a Software Application Developer at Accenture Solutions Pvt. Ltd., I am confident in my ability to contribute effectively to your team.</p>
+          <p>My educational background has equipped me with a solid foundation in computer science principles and programming languages, including Java, Python, R, C, and C++. Moreover, my coursework and projects have honed my skills in data management, analytics, and web development.</p>
+          <p>Notably, I have led initiatives such as building a data warehouse using dimensional modeling, which involved leveraging tools like Microsoft Access and MySQL to analyze healthcare datasets sourced from platforms like Kaggle.</p>
+          <p>In my previous role at Accenture Solutions Pvt. Ltd., I served as a SAP Customer Service Consultant for a Europe-based pharmaceutical organization. During my tenure, I demonstrated my ability to prepare comprehensive test plans, execute end-to-end functional testing, and deliver defect-free projects on schedule.</p>
+          <p>Additionally, I analyzed data from data warehouses to derive actionable insights, contributing to the organization's strategic decision-making process. Moreover, I took an active role in mentoring new team members through knowledge transfer sessions, fostering a collaborative and growth-oriented environment.</p>
+          <p>Furthermore, my experience as a Teaching Assistant at Northern Arizona University has enhanced my communication and organizational skills. In this capacity, I provided support to students in courses such as Data Structures and Principles of Programming Language, fostering their understanding of complex concepts through individual tutoring sessions and grading assistance.</p>
+          <p>Moreover, my involvement as a Volunteer Student Ambassador underscores my commitment to academic excellence and community engagement.</p>
+          <p>I am particularly drawn to your Company due to its reputation for innovation and commitment to driving positive change through technology. I am eager to leverage my skills and experience to contribute to your team's success while continuing to grow both personally and professionally.</p>
+        </div>
+      </div>
     </div>
   </div>
 </body>
