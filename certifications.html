@@ -17,26 +17,14 @@
         .container {
             display: flex;
         }
-        .sidebar a {
-      color: #fff;
-      text-decoration: none;
-    }
-    .sidebar .logo {
-      width: 50px;
-      height: 50px;
-      margin-bottom: 20px;
-      background-color: #fff;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .sidebar .logo a {
-      color: #333;
-    }
-    .sidebar .logo a:hover {
-      color: #FFD700;
-    }
+        .sidebar {
+            background-color: #f0f0f0;
+            width: 200px;
+            padding: 40px;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
         .main-content {
             flex: 1;
             display: flex;
@@ -94,32 +82,30 @@
         }
         .certificate embed {
             width: 100%;
-            height: 100%;
+            max-width: 600px;
+            height: 800px;
         }
     </style>
 </head>
 <body>
-     <div class="container">
-    <div class="sidebar">
-      <div class="logo">
-        <a href="index.html"><i class="fas fa-home"></i></a>
-      </div>
-      <div class="logo">
-        <a href="about.html"><i class="fas fa-user"></i></a>
-      </div>
-      <div class="logo">
-        <a href="skills.html"><i class="fas fa-cogs"></i></a>
-      </div>
-      <div class="logo">
-        <a href="experience.html"><i class="fas fa-briefcase"></i></a>
-      </div>
-      <div class="logo">
-        <a href="projects.html"><i class="fas fa-project-diagram"></i></a>
-      </div>
-      <div class="logo">
-        <a href="certifications.html"><i class="fas fa-certificate"></i></a>
-      </div>
-    </div>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo">
+                <a href="index.html"><i class="fas fa-home"></i></a>
+            </div>
+            <div class="logo">
+                <a href="about.html"><i class="fas fa-user"></i></a>
+            </div>
+            <div class="logo">
+                <a href="skills.html"><i class="fas fa-cogs"></i></a>
+            </div>
+            <div class="logo">
+                <a href="experience.html"><i class="fas fa-briefcase"></i></a>
+            </div>
+            <div class="logo">
+                <a href="projects.html"><i class="fas fa-project-diagram"></i></a>
+            </div>
+        </div>
         <div class="main-content">
             <div class="container">
                 <h1>Certifications</h1>
@@ -132,7 +118,46 @@
                         <h3>SAP Fiori</h3>
                         <embed src="SAP_Fiori.pdf" type="application/pdf" />
                     </div>
-                    <!-- Add more certificates as needed -->
+                    <div class="certificate">
+                        <h3>SAP ERP</h3>
+                        <embed src="SAP_ERP.pdf" type="application/pdf" />
+                    </div>
+                    <div class="certificate">
+                        <h3>SQL</h3>
+                        <embed src="UDEMY SQL.pdf" type="application/pdf" />
+                    </div>
+                    <div class="certificate">
+                        <h3>Data Science Foundations</h3>
+                        <embed src="Data Science Foundation.jpg" type="application/pdf" />
+                    </div>
+                    <div class="certificate">
+                        <h3>Attention to Detail</h3>
+                        <embed src="Attention to Detail cert.pdf" type="application/pdf" />
+                    </div>
+                    <div class="certificate">
+                        <h3>Microsoft Certified: Power Platform Fundamentals</h3>
+                        <embed src="Microsoft Certified Professional Certificate.pdf" type="application/pdf" />
+                    </div>
+                    <div class="certificate">
+                        <h3>Machine learning using Python</h3>
+                        <embed src="MACHINE LEARNING APSSDC.png" type="application/pdf" />
+                    </div>
+                    <div class="certificate">
+                        <h3>Web Development Using Django</h3>
+                        <embed src="Web Development cert.pdf" type="application/pdf" />
+                    </div>
+                    <div class="certificate">
+                        <h3>Data Analysis using Python</h3>
+                        <embed src="DATA ANALYSIS APSSDC.png" type="application/pdf" />
+                    </div>
+                    <div class="certificate">
+                        <h3>Programming for Everybody (Getting Started with Python)</h3>
+                        <embed src="Coursera KTS7GJG2SCCE.pdf" type="application/pdf" />
+                    </div>
+                    <div class="certificate">
+                        <h3>Python (basic)</h3>
+                        <embed src="HackerRank cert.pdf" type="application/pdf" />
+                    </div>
                 </div>
             </div>
         </div>
