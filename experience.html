@@ -1,135 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experience - Sai Sunandh Ramayanam</title>
-    <!-- Add necessary icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <style>
-        /* Add your CSS styles here */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .content-container {
-            max-width: 800px;
-            background-color: white;
-            padding: 40px;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experience - Sai Sunandh Ramayanam</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      display: flex;
+    }
+    .sidebar {
+    background-color: #f0f0f0;
+    color: #333;
+    width: 100px;
+    padding: 40px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-y: auto; /* Add scroll if content exceeds height */
+    }
+    .image {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            padding: 150px;
+            position: center;
             border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            text-align: center;
-            color: #333;
-        }
-        h2 {
-            color: #555;
-        }
-        h3 {
-            color: #333;
-        }
-        p {
-            color: #666;
-            margin-bottom: 10px;
-        }
-        .contact-info {
-            text-align: center;
             margin-bottom: 20px;
         }
-        .contact-info a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        .experience-section {
-            margin-bottom: 40px;
-        }
-        .experience-section h3 {
-            margin-top: 20px;
-        }
-        .skills-list {
-            margin-top: 20px;
-            list-style-type: none;
-            padding-left: 0;
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .skills-list li {
-            background-color: #f0f0f0;
-            color: #333;
-            padding: 8px 12px;
-            border-radius: 20px;
-            margin-right: 10px;
-            margin-bottom: 10px;
-        }
-    </style>
+    .sidebar a {
+      color: #fff;
+      text-decoration: none;
+    }
+    .sidebar .logo {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 20px;
+      background-color: #fff;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .sidebar .logo a {
+      color: #333;
+    }
+    .sidebar .logo a:hover {
+      color: #FFD700;
+    }
+    .main-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      margin-left: 100px;
+
+    }
+    .contact-info {
+      margin-bottom: 20px;
+    }
+    .contact-info a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    .section {
+      margin-bottom: 30px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      margin-left: 100px;
+
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .section-title {
+      font-size: 1.2em;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .section-content {
+      margin-left: 100px;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <div class="content-container">
-            <h1>Experience</h1>
-
-            <div class="contact-info">
-                <h2>Sai Sunandh Ramayanam</h2>
-                <p>+1 928-550-2812 | <a href="mailto:saisunandhramayanam@gmail.com">saisunandhramayanam@gmail.com</a> | <a href="mailto:sr2984@nau.edu">sr2984@nau.edu</a> | <a href="https://linkedin.com/in/sai-sunandh-ramayanam">linkedin.com/in/sai-sunandh-ramayanam</a></p>
-            </div>
-
-            <div class="experience-section">
-                <h2>Work Experience</h2>
-                <div>
-                    <h3>Teaching Assistant</h3>
-                    <p>Northern Arizona University · Part-time</p>
-                    <p>Sep 2023 - Present · 6 mos</p>
-                    <p>United States · On-site</p>
-                    <ul class="skills-list">
-                        <li>Engineering</li>
-                        <li>Programming</li>
-                        <li>Assistant Teaching</li>
-                        <li>Assistants</li>
-                        <li>Data Structures</li>
-                        <li>Object-Oriented Programming (OOP)</li>
-                        <li>Python (Programming Language)</li>
-                        <li>C (Programming Language)</li>
-                        <li>C++</li>
-                        <li>Academic Support Services</li>
-                        <li>Communication</li>
-                        <li>Debugging</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Associate Software Engineer</h3>
-                    <p>Accenture</p>
-                    <p>Sep 2021 - Dec 2022 · 1 yr 4 mos</p>
-                    <ul class="skills-list">
-                        <li>Programming</li>
-                        <li>Microsoft Power BI</li>
-                        <li>SAP Fiori</li>
-                        <li>Amazon Web Services (AWS)</li>
-                        <li>SAP Technical Services</li>
-                        <li>Communication</li>
-                        <li>Data Analytics</li>
-                        <li>SAP sales and distribution</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="about-me-section">
-                <h2>About Me</h2>
-                <p>With a Master of Science in Computer Science from Northern Arizona University, supplemented by hands-on experience as a Software Application Developer at Accenture Solutions Pvt. Ltd., I am confident in my ability to contribute effectively to your team.</p>
-                <p>My educational background has equipped me with a solid foundation in computer science principles and programming languages, including Java, Python, R, C, and C++. Moreover, my coursework and projects have honed my skills in data management, analytics, and web development. Notably, I have led initiatives such as building a data warehouse using dimensional modeling, which involved leveraging tools like Microsoft Access and MySQL to analyze healthcare datasets sourced from platforms like Kaggle.</p>
-                <p>In my previous role at Accenture Solutions Pvt. Ltd., I served as a SAP Customer Service Consultant for a Europe-based pharmaceutical organization. During my tenure, I demonstrated my ability to prepare comprehensive test plans, execute end-to-end functional testing, and deliver defect-free projects on schedule. Additionally, I analyzed data from data warehouses to derive actionable insights, contributing to the organization's strategic decision-making process. Moreover, I took an active role in mentoring new team members through knowledge transfer sessions, fostering a collaborative and growth-oriented environment.</p>
-                <p>Furthermore, my experience as a Teaching Assistant at Northern Arizona University has enhanced my communication and organizational skills. In this capacity, I provided support to students in courses such as Data Structures (C, C++) and Principles of Programming Language (Python), fostering their understanding of complex concepts through individual tutoring sessions and grading assistance. Moreover, my involvement as a Volunteer Student Ambassador underscores my commitment to academic excellence and community engagement.</p>
-                <p>I am particularly drawn to innovation and commitment to driving positive change through technology. I am eager to leverage my skills and experience continuing to grow both personally and professionally.</p>
-            </div>
-        </div>
+  <div class="container">
+    <div class="sidebar">
+      <div class="logo">
+        <a href="index.html"><i class="fas fa-home"></i></a>
+      </div>
+      <div class="logo">
+        <a href="about.html"><i class="fas fa-user"></i></a>
+      </div>
+      <div class="logo">
+        <a href="skills.html"><i class="fas fa-cogs"></i></a>
+      </div>
+      <div class="logo">
+        <a href="experience.html"><i class="fas fa-briefcase"></i></a>
+      </div>
+      <div class="logo">
+        <a href="projects.html"><i class="fas fa-project-diagram"></i></a>
+      </div>
+      <div class="logo">
+        <a href="certifications.html"><i class="fas fa-certificate"></i></a>
+      </div>
     </div>
+    <div class="main-content">
+      <div class="contact-info">
+          <img class="image" src="Pic1.jpg" alt="Your Photo">
+         <p>Sai Sunandh Ramayanam<br>
+        +1 928-550-2812 | <a href="mailto:saisunandhramayanam@gmail.com">saisunandhramayanam@gmail.com</a> | <a href="https://linkedin.com/in/sai-sunandh-ramayanam" target="_blank">linkedin.com/in/sai-sunandh-ramayanam</a></p>
+      </div>
+      <div class="section">
+        <h2 class="section-title">Education</h2>
+        <div class="section-content">
+          <p>Master of Science: Computer Science, Northern Arizona University, May 2024</p>
+          <p>Bachelor of Engineering: Electrical and Electronics Engineering, Jawaharlal Nehru Technological University, July 2021</p>
+        </div>
+      </div>
+      <div class="section">
+        <h2 class="section-title">Skills & Tools</h2>
+        <div class="section-content">
+          <p>Languages: Java, Python, R, C, C++</p>
+          <p>Data Management & Analytics: MySQL, Data Warehousing, Python Data Analytics libraries, Data Visualization libraries</p>
+          <p>Web Development: HTML, CSS</p>
+          <p>Tools: MS Excel, Microsoft Access, RStudio, Python IDLE, Deepstate</p>
+        </div>
+      </div>
+      <div class="section">
+        <h2 class="section-title">Computer Science Projects</h2>
+        <div class="section-content">
+          <p>Building a new data warehouse using dimensional modeling: Microsoft Access, MySQL</p>
+          <p>Advanced Software Assurance testing using Deepstate: C++</p>
+          <p>Covid Testing unit web application using Django: Python, HTML, CSS</p>
+        </div>
+      </div>
+      <div class="section">
+        <h2 class="section-title">Work Experience</h2>
+        <div class="section-content">
+          <p>Teaching Assistant, SICCS Department, NAU, Flagstaff: September 2023 – December 2023</p>
+          <p>Teaching Assistant, Center for International Education, NAU, Flagstaff: September 2023 – December 2023</p>
+          <p>Software Application Developer, Accenture Solutions Pvt. Ltd., : September 2021 – December 2022</p>
+        </div>
+      </div>
+      <div class="section">
+        <h2 class="section-title">Awards & Involvement</h2>
+        <div class="section-content">
+          <p>Volunteer, NAU Student Ambassador, NAU, August 2023</p>
+          <p>Class Representative, Pragati Engineering College, JNTUK, India, August 2021</p>
+          <p>Student Coordinator, Technical Fest, Pragati Engineering College</p>
+        </div>
+      </div>
+      <div class="section">
+        <h2 class="section-title">About Me</h2>
+        <div class="section-content">
+          <p>With a Master of Science in Computer Science from Northern Arizona University, supplemented by hands-on experience as a Software Application Developer at Accenture Solutions Pvt. Ltd., I am confident in my ability to contribute effectively to your team.</p>
+          <p>My educational background has equipped me with a solid foundation in computer science principles and programming languages, including Java, Python, R, C, and C++. Moreover, my coursework and projects have honed my skills in data management, analytics, and web development.</p>
+          <p>Notably, I have led initiatives such as building a data warehouse using dimensional modeling, which involved leveraging tools like Microsoft Access and MySQL to analyze healthcare datasets sourced from platforms like Kaggle.</p>
+          <p>In my previous role at Accenture Solutions Pvt. Ltd., I served as a SAP Customer Service Consultant for a Europe-based pharmaceutical organization. During my tenure, I demonstrated my ability to prepare comprehensive test plans, execute end-to-end functional testing, and deliver defect-free projects on schedule.</p>
+          <p>Additionally, I analyzed data from data warehouses to derive actionable insights, contributing to the organization's strategic decision-making process. Moreover, I took an active role in mentoring new team members through knowledge transfer sessions, fostering a collaborative and growth-oriented environment.</p>
+          <p>Furthermore, my experience as a Teaching Assistant at Northern Arizona University has enhanced my communication and organizational skills. In this capacity, I provided support to students in courses such as Data Structures and Principles of Programming Language, fostering their understanding of complex concepts through individual tutoring sessions and grading assistance.</p>
+          <p>Moreover, my involvement as a Volunteer Student Ambassador underscores my commitment to academic excellence and community engagement.</p>
+          <p>I am particularly drawn to your Company due to its reputation for innovation and commitment to driving positive change through technology. I am eager to leverage my skills and experience to contribute to your team's success while continuing to grow both personally and professionally.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
