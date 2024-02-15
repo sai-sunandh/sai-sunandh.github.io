@@ -97,17 +97,42 @@
         /* Additional styles for certifications page */
         .certificates {
             margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 20px;
         }
         .certificate {
-            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: #fff;
         }
         .certificate h3 {
-            margin-bottom: 5px;
+            margin-bottom: 10px;
+            font-size: 18px;
+            color: #333;
         }
-        .certificate embed {
-            width: 100%;
-            max-width: 600px;
-            height: 800px;
+        .certificate img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .certificate .certificate-description {
+            margin-bottom: 10px;
+        }
+        .certificate .certificate-link {
+            display: block;
+            text-align: center;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .certificate .certificate-link:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
@@ -139,64 +164,73 @@
                 <div class="certificates">
                     <div class="certificate">
                         <h3>DevOps</h3>
-                        <embed src="Devops udemy.pdf" type="application/pdf" />
+                        <img src="Devops_udemy.jpg" alt="DevOps Certificate">
+                        <p class="certificate-description">Description: This certificate verifies that Sai Sunandh Ramayanam has successfully completed the DevOps course on Udemy.</p>
+                        <!-- Add your certificate details here -->
                     </div>
                     <div class="certificate">
                         <h3>SAP Fiori</h3>
-                        <embed src="SAP Fiori.pdf" type="application/pdf" />
+                        <img src="SAP_Fiori.jpg" alt="SAP Fiori Certificate">
+                        <p class="certificate-description">Description: This certificate verifies that Sai Sunandh Ramayanam has successfully completed the SAP Fiori course.</p>
+                        <!-- Add your certificate details here -->
                     </div>
                     <div class="certificate">
                         <h3>SAP ERP</h3>
-                        <embed src="SAP ERP.pdf" type="application/pdf" />
+                        <img src="SAP_ERP.jpg" alt="SAP ERP Certificate">
+                        <p class="certificate-description">Description: This certificate verifies that Sai Sunandh Ramayanam has successfully completed the SAP ERP course.</p>
+                        <!-- Add your certificate details here -->
                     </div>
                     <div class="certificate">
                         <h3>SQL</h3>
-                        <embed src="UDEMY SQL.pdf" type="application/pdf" />
+                        <img src="UDEMY_SQL.jpg" alt="SQL Certificate">
+                        <p class="certificate-description">Description: This certificate verifies that Sai Sunandh Ramayanam has successfully completed the SQL course on Udemy.</p>
+                        <!-- Add your certificate details here -->
                     </div>
                     <div class="certificate">
                         <h3>Data Science Foundations</h3>
-                        <embed src="Data Science Foundation.jpg" type="application/pdf" />
+                        <img src="Data_Science_Foundation.jpg" alt="Data Science Foundations Certificate">
+                        <p class="certificate-description">Description: This certificate verifies that Sai Sunandh Ramayanam has successfully completed the Data Science Foundations course.</p>
+                        <!-- Add your certificate details here -->
                     </div>
                     <div class="certificate">
                         <h3>Attention to Detail</h3>
-                        <a href="https://www.testdome.com/certificates/66b5ec7e62de41609d251e450dfda96e" class="testdome-certificate-stamp gold">
-                            <span class="testdome-certificate-name">sai sunandh Ramay...</span>
-                            <span class="testdome-certificate-test-name">Attention to Detail</span>
-                            <span class="testdome-certificate-card-logo">TestDome<br>Certificate</span>
-                        </a>
-                        <script>
-                            var stylesheet = "https://www.testdome.com/content/source/stylesheets/embed.css";
-                            link = document.createElement("link");
-                            link.href = stylesheet;
-                            link.type = "text/css";
-                            link.rel = "stylesheet";
-                            link.media = "screen,print";
-                            document.getElementsByTagName("head")[0].appendChild(link);
-                        </script>
+                        <p class="certificate-description">Description: This certificate verifies that Sai Sunandh Ramayanam has successfully completed the Attention to Detail test on TestDome. (Note: This certificate does not have a downloadable file.)</p>
+                        <!-- Add your certificate details here -->
                     </div>
                     <div class="certificate">
                         <h3>Microsoft Certified: Power Platform Fundamentals</h3>
-                        <embed src="Microsoft_Certified_Professional_Certificate_0.pdf" type="application/pdf" />
+                        <img src="Microsoft_Certified_Power_Platform_Fundamentals.jpg" alt="Microsoft Certified: Power Platform Fundamentals Certificate">
+                        <p class="certificate-description">Description: This certificate verifies that Sai Sunandh Ramayanam has successfully completed the Microsoft Certified: Power Platform Fundamentals exam.</p>
+                        <!-- Add your certificate details here -->
                     </div>
                     <div class="certificate">
                         <h3>Machine learning using Python</h3>
-                        <embed src="MACHINE LEARNING APSSDC.png" type="application/pdf" />
+                        <img src="MACHINE_LEARNING_APSSDC.png" alt="Machine Learning using Python Certificate">
+                        <p class="certificate-description">Description: This certificate verifies that Sai Sunandh Ramayanam has successfully completed the Machine learning using Python course.</p>
+                        <!-- Add your certificate details here -->
                     </div>
                     <div class="certificate">
                         <h3>Web Development Using Django</h3>
-                        <embed src="web dev certifi.pdf" type="application/pdf" />
+                        <img src="web_dev_certifi.jpg" alt="Web Development Using Django Certificate">
+                        <p class="certificate-description">Description: This certificate verifies that Sai Sunandh Ramayanam has successfully completed the Web Development Using Django course.</p>
+                        <!-- Add your certificate details here -->
                     </div>
                     <div class="certificate">
                         <h3>Data Analysis using Python</h3>
-                        <embed src="DATA ANALYSIS APSSDC.png" type="application/pdf" />
+                        <img src="DATA_ANALYSIS_APSSDC.png" alt="Data Analysis using Python Certificate">
+                        <p class="certificate-description">Description: This certificate verifies that Sai Sunandh Ramayanam has successfully completed the Data Analysis using Python course.</p>
+                        <!-- Add your certificate details here -->
                     </div>
                     <div class="certificate">
                         <h3>Programming for Everybody (Getting Started with Python)</h3>
-                        <embed src="Coursera KTS7GJG2SCCE.pdf" type="application/pdf" />
+                        <img src="Coursera_Programming_for_Everybody.jpg" alt="Programming for Everybody Certificate">
+                        <p class="certificate-description">Description: This certificate verifies that Sai Sunandh Ramayanam has successfully completed the Programming for Everybody (Getting Started with Python) course on Coursera.</p>
+                        <!-- Add your certificate details here -->
                     </div>
                     <div class="certificate">
                         <h3>Python (basic)</h3>
-                        <a href="https://www.hackerrank.com/certificates/iframe/349164131222" type="application/pdf" />
+                        <p class="certificate-description">Description: This certificate verifies that Sai Sunandh Ramayanam has successfully completed the Python (basic) test on HackerRank. (Note: This certificate does not have a downloadable file.)</p>
+                        <!-- Add your certificate details here -->
                     </div>
                 </div>
             </div>
