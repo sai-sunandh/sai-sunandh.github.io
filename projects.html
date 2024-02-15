@@ -9,39 +9,39 @@
     <style>
         /* Sidebar styles */
         .sidebar {
-    background-color: #f0f0f0;
-    color: #333;
-    width: 100px;
-    padding: 40px;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    left: 0;
-    top: 0;
-    overflow-y: auto; /* Add scroll if content exceeds height */
-    }
+            background-color: #f0f0f0;
+            color: #333;
+            width: 100px;
+            padding: 40px;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            left: 0;
+            top: 0;
+            overflow-y: auto; /* Add scroll if content exceeds height */
+        }
         .sidebar a {
-      color: #fff;
-      text-decoration: none;
-    }
+            color: #fff;
+            text-decoration: none;
+        }
         .sidebar .logo {
-      width: 50px;
-      height: 50px;
-      margin-bottom: 20px;
-      background-color: #fff;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-       .sidebar .logo a {
-      color: #333;
-    }
-    .sidebar .logo a:hover {
-      color: #FFD700;
-    }
-        /* Other styles */
+            width: 50px;
+            height: 50px;
+            margin-bottom: 20px;
+            background-color: #fff;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .sidebar .logo a {
+            color: #333;
+        }
+        .sidebar .logo a:hover {
+            color: #FFD700;
+        }
+        /* Content styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -54,22 +54,46 @@
         .content {
             padding: 20px;
             margin-left: 220px; /* Adjusted to accommodate the sidebar */
+            display: flex;
+            flex-wrap: wrap;
         }
-        h1 {
+        .project-tile {
+            width: calc(50% - 20px); /* Adjusted for two tiles per row with some margin */
+            margin: 10px;
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .project-tile:hover {
+            transform: translateY(-5px);
+        }
+        .project-image {
+            width: 100%;
+            height: 200px; /* Adjusted for image height */
+            object-fit: cover;
+            border-bottom: 2px solid #007bff; /* Added border at the bottom */
+        }
+        .project-details {
+            padding: 10px;
+        }
+        .project-title {
+            font-size: 18px;
             color: #333;
+            margin-bottom: 5px;
         }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        li {
+        .project-description {
+            font-size: 14px;
+            color: #666;
             margin-bottom: 10px;
         }
-        li a {
-            text-decoration: none;
+        .project-link {
             color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
         }
-        li a:hover {
+        .project-link:hover {
             text-decoration: underline;
         }
     </style>
@@ -99,13 +123,42 @@
         </div>
         <!-- Content -->
         <div class="content">
-            <h1>COVID Projects</h1>
-            <ul>
-                <li><a href="https://github.com/sai-sunandh/covidsupportsystem">covidsupportsystem</a> - Python</li>
-                <li><a href="https://github.com/sai-sunandh/covidunit">covidunit</a> - Python</li>
-                <li><a href="https://github.com/sai-sunandh/CS567_Final_Project">CS567_Final_Project</a> - C++</li>
-                <li><a href="https://github.com/sai-sunandh/Covidtestingunit">Covidtestingunit</a> - HTML</li>
-            </ul>
+            <!-- Project Tile 1 -->
+            <div class="project-tile">
+                <img class="project-image" src="covidsupportsystem.jpg" alt="covidsupportsystem">
+                <div class="project-details">
+                    <div class="project-title">covidsupportsystem</div>
+                    <div class="project-description">Python project to support COVID efforts.</div>
+                    <a class="project-link" href="https://github.com/sai-sunandh/covidsupportsystem">View Project</a>
+                </div>
+            </div>
+            <!-- Project Tile 2 -->
+            <div class="project-tile">
+                <img class="project-image" src="covidunit.jpg" alt="covidunit">
+                <div class="project-details">
+                    <div class="project-title">covidunit</div>
+                    <div class="project-description">Python project for COVID unit management.</div>
+                    <a class="project-link" href="https://github.com/sai-sunandh/covidunit">View Project</a>
+                </div>
+            </div>
+            <!-- Project Tile 3 -->
+            <div class="project-tile">
+                <img class="project-image" src="CS567_Final_Project.jpg" alt="CS567_Final_Project">
+                <div class="project-details">
+                    <div class="project-title">CS567_Final_Project</div>
+                    <div class="project-description">C++ project for course assignment.</div>
+                    <a class="project-link" href="https://github.com/sai-sunandh/CS567_Final_Project">View Project</a>
+                </div>
+            </div>
+            <!-- Project Tile 4 -->
+            <div class="project-tile">
+                <img class="project-image" src="Covidtestingunit.jpg" alt="Covidtestingunit">
+                <div class="project-details">
+                    <div class="project-title">Covidtestingunit</div>
+                    <div class="project-description">HTML project for COVID testing unit.</div>
+                    <a class="project-link" href="https://github.com/sai-sunandh/Covidtestingunit">View Project</a>
+                </div>
+            </div>
         </div>
     </div>
 </body>
