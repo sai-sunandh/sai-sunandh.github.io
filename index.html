@@ -16,12 +16,35 @@
             display: flex;
         }
         .sidebar {
-            background-color: #f0f0f0;
+            background-color: #333;
+            color: #fff;
             width: 200px;
-            padding: 40px;
+            padding: 20px;
             height: 100vh;
             display: flex;
             flex-direction: column;
+        }
+        .sidebar a {
+            color: #fff;
+            text-decoration: none;
+            margin-bottom: 15px;
+            display: block;
+        }
+        .sidebar .logo {
+            width: 50px;
+            height: 50px;
+            background-color: #fff;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .sidebar .logo a {
+            color: #333;
+        }
+        .sidebar .logo a:hover {
+            color: #FFD700;
         }
         .main-content {
             flex: 1;
@@ -87,6 +110,9 @@
             </div>
             <div class="logo">
                 <a href="projects.html"><i class="fas fa-project-diagram"></i></a>
+            </div>
+            <div class="logo">
+                <a href="certifications.html"><i class="fas fa-certificate"></i></a>
             </div>
         </div>
         <div class="main-content">
