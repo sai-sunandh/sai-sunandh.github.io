@@ -3,79 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - Sai Sunandh Ramayanam</title>
-    <!-- Add necessary icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>COVID Projects</title>
     <style>
-        /* Add your CSS styles here */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
+        .sidebar a {
+            color: #fff;
+            text-decoration: none;
         }
-        .container {
-            display: flex;
-        }
-        .sidebar {
-            background-color: #f0f0f0;
-            width: 200px;
-            padding: 40px;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-        .main-content {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-        }
-        .logo {
+        .sidebar .logo {
             width: 50px;
             height: 50px;
-            margin-bottom: 10px;
-        }
-        .name {
-            font-size: 24px;
-            color: #333;
-            margin-bottom: 10px;
-        }
-        .email {
-            color: #666;
-            margin-bottom: 10px;
-        }
-        .image {
-            width: 100%;
-            max-width: 300px;
-            height: auto;
-            border-radius: 10px;
             margin-bottom: 20px;
-        }
-        .phone {
-            color: #666;
-            margin-bottom: 10px;
-        }
-        .social {
+            background-color: #fff;
+            border-radius: 50%;
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-top: 20px;
         }
-        .social-link {
-            margin: 0 10px;
-            color: #666;
-            text-decoration: none;
-            font-size: 24px;
-        }
-        /* Additional styles for Projects page */
-        h1 {
+        .sidebar .logo a {
             color: #333;
         }
-        h2 {
-            color: #555;
+        .sidebar .logo a:hover {
+            color: #FFD700;
         }
     </style>
 </head>
@@ -97,19 +45,18 @@
             <div class="logo">
                 <a href="projects.html"><i class="fas fa-project-diagram"></i></a>
             </div>
-        </div>
-        <div class="main-content">
-            <div class="container">
-                <h1>Projects</h1>
-                <section>
-                    <h2>Computer Science Projects</h2>
-                    <ul>
-                        <li>Building a new data warehouse using dimensional modeling: Microsoft Access, MySQL</li>
-                        <li>Advanced Software Assurance testing using Deepstate: C++</li>
-                        <li>Covid Testing unit web application using Django: Python, HTML, CSS</li>
-                    </ul>
-                </section>
+            <div class="logo">
+                <a href="certifications.html"><i class="fas fa-certificate"></i></a>
             </div>
+        </div>
+        <div class="content">
+            <h1>COVID Projects</h1>
+            <ul>
+                <li><a href="https://github.com/covidsupportsystem">covidsupportsystem</a> - Python</li>
+                <li><a href="https://github.com/covidunit">covidunit</a> - Python</li>
+                <li><a href="https://github.com/CS567_Final_Project">CS567_Final_Project</a> - C++</li>
+                <li><a href="https://github.com/Covidtestingunit">Covidtestingunit</a> - HTML</li>
+            </ul>
         </div>
     </div>
 </body>
