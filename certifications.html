@@ -18,12 +18,35 @@
             display: flex;
         }
         .sidebar {
-            background-color: #f0f0f0;
+            background-color: #333;
+            color: #fff;
             width: 200px;
-            padding: 40px;
+            padding: 20px;
             height: 100vh;
             display: flex;
             flex-direction: column;
+        }
+        .sidebar a {
+            color: #fff;
+            text-decoration: none;
+            margin-bottom: 15px;
+            display: block;
+        }
+        .sidebar .logo {
+            width: 50px;
+            height: 50px;
+            background-color: #fff;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .sidebar .logo a {
+            color: #333;
+        }
+        .sidebar .logo a:hover {
+            color: #FFD700;
         }
         .main-content {
             flex: 1;
@@ -105,6 +128,9 @@
             <div class="logo">
                 <a href="projects.html"><i class="fas fa-project-diagram"></i></a>
             </div>
+            <div class="logo">
+                <a href="certifications.html"><i class="fas fa-certificate"></i></a>
+            </div>
         </div>
         <div class="main-content">
             <div class="container">
@@ -133,19 +159,19 @@
                     <div class="certificate">
                         <h3>Attention to Detail</h3>
                         <a href="https://www.testdome.com/certificates/66b5ec7e62de41609d251e450dfda96e" class="testdome-certificate-stamp gold">
-            <span class="testdome-certificate-name">sai sunandh Ramay...</span>
-            <span class="testdome-certificate-test-name">Attention to Detail</span>
-            <span class="testdome-certificate-card-logo">TestDome<br>Certificate</span>
-        </a>
-        <script>
-            var stylesheet = "https://www.testdome.com/content/source/stylesheets/embed.css";
-            link = document.createElement("link");
-            link.href = stylesheet;
-            link.type = "text/css";
-            link.rel = "stylesheet";
-            link.media = "screen,print";
-            document.getElementsByTagName("head")[0].appendChild(link);
-        </script>
+                            <span class="testdome-certificate-name">sai sunandh Ramay...</span>
+                            <span class="testdome-certificate-test-name">Attention to Detail</span>
+                            <span class="testdome-certificate-card-logo">TestDome<br>Certificate</span>
+                        </a>
+                        <script>
+                            var stylesheet = "https://www.testdome.com/content/source/stylesheets/embed.css";
+                            link = document.createElement("link");
+                            link.href = stylesheet;
+                            link.type = "text/css";
+                            link.rel = "stylesheet";
+                            link.media = "screen,print";
+                            document.getElementsByTagName("head")[0].appendChild(link);
+                        </script>
                     </div>
                     <div class="certificate">
                         <h3>Microsoft Certified: Power Platform Fundamentals</h3>
@@ -169,7 +195,7 @@
                     </div>
                     <div class="certificate">
                         <h3>Python (basic)</h3>
-                        <embed href="https://www.hackerrank.com/certificates/iframe/349164131222" type="application/pdf" />
+                        <a href="https://www.hackerrank.com/certificates/iframe/349164131222" type="application/pdf" />
                     </div>
                 </div>
             </div>
