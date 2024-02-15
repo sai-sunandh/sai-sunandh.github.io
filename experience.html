@@ -7,7 +7,7 @@
     <!-- Add necessary icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
-        /* Add your CSS styles here */
+        /* General CSS */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -17,8 +17,9 @@
         .container {
             display: flex;
             justify-content: center;
-            align-items: center;
-            height: 100vh;
+            align-items: flex-start; /* Changed to flex-start */
+            min-height: 100vh; /* Changed to min-height */
+            padding-top: 20px; /* Added padding top */
         }
         .content-container {
             max-width: 800px;
@@ -71,7 +72,7 @@
             margin-bottom: 10px;
         }
 
-        /* Sidebar Styles */
+        /* Sidebar CSS */
         .sidebar {
             background-color: #f0f0f0;
             color: #333;
@@ -86,7 +87,7 @@
             overflow-y: auto; /* Add scroll if content exceeds height */
         }
         .sidebar a {
-            color: #fff;
+            color: #333;
             text-decoration: none;
         }
         .sidebar .logo {
