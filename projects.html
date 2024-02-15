@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>COVID Projects</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         /* Sidebar styles */
         .sidebar {
@@ -14,6 +16,9 @@
             padding: 20px;
             display: flex;
             flex-direction: column;
+            position: fixed;
+            top: 0;
+            left: 0;
         }
         .sidebar a {
             color: #fff;
@@ -50,6 +55,7 @@
         }
         .content {
             padding: 20px;
+            margin-left: 220px; /* Adjusted to accommodate the sidebar */
         }
         h1 {
             color: #333;
