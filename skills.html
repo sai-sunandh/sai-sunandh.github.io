@@ -19,11 +19,32 @@
         }
         .sidebar {
             background-color: #f0f0f0;
-            width: 200px;
+            color: #333;
+            width: 100px;
             padding: 40px;
             height: 100vh;
             display: flex;
             flex-direction: column;
+            position: fixed;
+            left: 0;
+            top: 0;
+            overflow-y: auto; /* Add scroll if content exceeds height */
+        }
+        .logo {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 20px;
+            background-color: #fff;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .logo a {
+            color: #333;
+        }
+        .logo a:hover {
+            color: #FFD700;
         }
         .main-content {
             flex: 1;
@@ -32,43 +53,7 @@
             align-items: center;
             justify-content: center;
             padding: 20px;
-        }
-        .logo {
-            width: 50px;
-            height: 50px;
-            margin-bottom: 10px;
-        }
-        .name {
-            font-size: 24px;
-            color: #333;
-            margin-bottom: 10px;
-        }
-        .email {
-            color: #666;
-            margin-bottom: 10px;
-        }
-        .image {
-            width: 100%;
-            max-width: 300px;
-            height: auto;
-            border-radius: 10px;
-            margin-bottom: 20px;
-        }
-        .phone {
-            color: #666;
-            margin-bottom: 10px;
-        }
-        .social {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 20px;
-        }
-        .social-link {
-            margin: 0 10px;
-            color: #666;
-            text-decoration: none;
-            font-size: 24px;
+            margin-left: 100px;
         }
         /* Additional styles for Skills page */
         h1 {
@@ -104,6 +89,7 @@
 </head>
 <body>
     <div class="container">
+        <!-- Sidebar -->
         <div class="sidebar">
             <div class="logo">
                 <a href="index.html"><i class="fas fa-home"></i></a>
@@ -120,7 +106,11 @@
             <div class="logo">
                 <a href="projects.html"><i class="fas fa-project-diagram"></i></a>
             </div>
+            <div class="logo">
+                <a href="certifications.html"><i class="fas fa-certificate"></i></a>
+            </div>
         </div>
+        <!-- Main Content -->
         <div class="main-content">
             <h1>Skills</h1>
             <div class="skill-category">
