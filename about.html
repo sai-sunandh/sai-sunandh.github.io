@@ -16,6 +16,40 @@
     .container {
       display: flex;
     }
+    /* For screens with a maximum width of 768 pixels (typical tablet and mobile sizes) */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 20px;
+    }
+    .main-content {
+        margin-left: 0;
+        padding: 20px;
+    }
+}
+
+/* For screens with a minimum width of 768 pixels (typical laptop/desktop sizes) */
+@media screen and (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+    .sidebar {
+        width: 200px;
+        height: 100vh;
+        position: fixed;
+        padding: 40px;
+    }
+    .main-content {
+        margin-left: 200px;
+        padding: 20px;
+    }
+}
+
     .background {
             position: fixed;
             top: 0;
