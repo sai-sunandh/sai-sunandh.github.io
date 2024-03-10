@@ -8,47 +8,38 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      background-color: #f4f4f4;
-      margin: 0;
-      padding: 0;
-    }
-        /* For screens with a maximum width of 768 pixels (typical tablet and mobile sizes) */
-@media screen and (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
-    .sidebar {
-        width: 100%;
-        height: auto;
-        position: relative;
-        padding: 20px;
-    }
-    .main-content {
-        margin-left: 0;
-        padding: 20px;
-    }
-}
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
 
-/* For screens with a minimum width of 768 pixels (typical laptop/desktop sizes) */
-@media screen and (min-width: 768px) {
-    .container {
-        flex-direction: row;
-    }
-    .sidebar {
-        width: 200px;
-        height: 100vh;
-        position: fixed;
-        padding: 40px;
-    }
-    .main-content {
-        margin-left: 200px;
-        padding: 20px;
-    }
-}
+        .main-header {
+            background-color: rgba(255, 255, 255, 0.7);
+            color: #333;
+            padding: 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000; /* Ensure it's above other content */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-         .background {
+        .fixed-name {
+            font-size: 24px;
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+
+        .background {
             position: fixed;
             top: 0;
             left: 0;
@@ -59,6 +50,7 @@
             background-size: 400% 400%; /* Larger background size for motion effect */
             animation: gradientMotion 15s ease infinite; /* Animation for background motion */
         }
+
         @keyframes gradientMotion {
             0% {
                 background-position: 0% 0%;
@@ -70,42 +62,49 @@
                 background-position: 0% 0%;
             }
         }
+
         .container {
             display: flex;
         }
+
         .sidebar {
-    background-color: rgba(255, 255, 255, 0.7);
-    color: #333;
-    width: 25px;
-    padding: 40px;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    left: 0;
-    top: 0;
-    overflow-y: auto; /* Add scroll if content exceeds height */
-    }
+            background-color: rgba(255, 255, 255, 0.7);
+            color: #333;
+            width: 25px;
+            padding: 40px;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            left: 0;
+            top: 0;
+            overflow-y: auto; /* Add scroll if content exceeds height */
+        }
+
         .sidebar a {
-      color: #fff;
-      text-decoration: none;
-    }
+            color: #fff;
+            text-decoration: none;
+        }
+
         .sidebar .logo {
-      width: 50px;
-      height: 50px;
-      margin-bottom: 20px;
-      background-color: #fff;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-       .sidebar .logo a {
-      color: #333;
-    }
-    .sidebar .logo a:hover {
-      color: #FFD700;
-    }
+            width: 50px;
+            height: 50px;
+            margin-bottom: 20px;
+            background-color: #fff;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sidebar .logo a {
+            color: #333;
+        }
+
+        .sidebar .logo a:hover {
+            color: #FFD700;
+        }
+
         .main-content {
             flex: 1;
             display: flex;
@@ -113,21 +112,9 @@
             align-items: center;
             justify-content: center;
             padding: 20px;
+            margin-top: 100px; /* Adjusted to accommodate fixed header */
         }
-        .logo {
-            width: 50px;
-            height: 50px;
-            margin-bottom: 10px;
-        }
-        .name {
-            font-size: 24px;
-            color: #333;
-            margin-bottom: 10px;
-        }
-        .email {
-            color: #666;
-            margin-bottom: 10px;
-        }
+
         .image {
             width: 100%;
             max-width: 300px;
@@ -135,16 +122,30 @@
             border-radius: 10px;
             margin-bottom: 20px;
         }
+
+        .name {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .email {
+            color: #666;
+            margin-bottom: 10px;
+        }
+
         .phone {
             color: #666;
             margin-bottom: 10px;
         }
+
         .social {
             display: flex;
             justify-content: center;
             align-items: center;
             margin-top: 20px;
         }
+
         .social-link {
             margin: 0 10px;
             color: #666;
@@ -154,46 +155,50 @@
     </style>
 </head>
 <body>
-        <div class="background"></div>
+<header class="main-header">
+    <div class="logo">
+        <a href="index.html"><i class="fas fa-home"></i></a>
+    </div>
+    <div class="fixed-name">
+        <h1>SAI SUNANDH RAMAYANAM</h1>
+    </div>
+</header>
+<div class="background"></div>
 
-    <div class="container">
-        <div class="sidebar">
-            <div class="logo">
-                <a href="index.html"><i class="fas fa-home"></i></a>
-            </div>
-            <div class="logo">
-                <a href="about.html"><i class="fas fa-user"></i></a>
-            </div>
-            <div class="logo">
-                <a href="skills.html"><i class="fas fa-cogs"></i></a>
-            </div>
-            <div class="logo">
-                <a href="experience.html"><i class="fas fa-briefcase"></i></a>
-            </div>
-            <div class="logo">
-                <a href="projects.html"><i class="fas fa-project-diagram"></i></a>
-            </div>
-            <div class="logo">
-                <a href="certifications.html"><i class="fas fa-certificate"></i></a>
-            </div>
+<div class="container">
+    <div class="sidebar">
+        <div class="logo">
+            <a href="index.html"><i class="fas fa-home"></i></a>
         </div>
-        <div class="main-content">
-            <br>            <br>
-            <br>
-            
-
-            <img class="image" src="ja.jpg" alt="Your Photo">
-            <div class="name">SAI SUNANDH RAMAYANAM</div>
-            <div class="email">saisunandhramayanam@gmail.com</div>
-            <div class="phone">Phone: +19285502812</div>
-            <div class="social">
-                <a class="social-link" href="https://www.facebook.com/sai.sunandh.200mb?mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a>
-                <a class="social-link" href="https://www.instagram.com/sai_sunandh_ramayanam/"><i class="fab fa-instagram"></i></a>
-                <a class="social-link" href="https://linkedin.com/in/sai-sunandh-ramayanam"><i class="fab fa-linkedin"></i></a>
-                <a class="social-link" href="https://github.com/sai-sunandh"><i class="fab fa-github"></i></a>
-            </div>
+        <div class="logo">
+            <a href="about.html"><i class="fas fa-user"></i></a>
+        </div>
+        <div class="logo">
+            <a href="skills.html"><i class="fas fa-cogs"></i></a>
+        </div>
+        <div class="logo">
+            <a href="experience.html"><i class="fas fa-briefcase"></i></a>
+        </div>
+        <div class="logo">
+            <a href="projects.html"><i class="fas fa-project-diagram"></i></a>
+        </div>
+        <div class="logo">
+            <a href="certifications.html"><i class="fas fa-certificate"></i></a>
         </div>
     </div>
+    <div class="main-content">
+        <img class="image" src="ja.jpg" alt="Your Photo">
+        <div class="name">SAI SUNANDH RAMAYANAM</div>
+        <div class="email">saisunandhramayanam@gmail.com</div>
+        <div class="phone">Phone: +19285502812</div>
+        <div class="social">
+            <a class="social-link" href="https://www.facebook.com/sai.sunandh.200mb?mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a>
+            <a class="social-link" href="https://www.instagram.com/sai_sunandh_ramayanam/"><i class="fab fa-instagram"></i></a>
+            <a class="social-link" href="https://linkedin.com/in/sai-sunandh-ramayanam"><i class="fab fa-linkedin"></i></a>
+            <a class="social-link" href="https://github.com/sai-sunandh"><i class="fab fa-github"></i></a>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>
