@@ -11,7 +11,7 @@
         .sidebar {
             background-color: rgba(255, 255, 255, 0.7);
             color: #333;
-            width: 25px;
+            width: 200px;
             padding: 40px;
             height: 100vh;
             display: flex;
@@ -20,50 +20,11 @@
             left: 0;
             top: 0;
             overflow-y: auto; /* Add scroll if content exceeds height */
-        }
-
-        /* For screens with a maximum width of 768 pixels (typical tablet and mobile sizes) */
-        @media screen and (max-width: 768px) {
-            .project-tile {
-                width: calc(100% - 40px);
-            }
-            .container {
-                flex-direction: column;
-            }
-            .sidebar {
-                width: 100%;
-                height: auto;
-                position: relative;
-                padding: 20px;
-            }
-            .main-content {
-                margin-left: 0;
-                padding: 20px;
-            }
-        }
-
-        /* For screens with a minimum width of 768 pixels (typical laptop/desktop sizes) */
-        @media screen and (min-width: 768px) {
-            .project-tile {
-                width: calc(50% - 40px);
-            }
-            .container {
-                flex-direction: row;
-            }
-            .sidebar {
-                width: 200px;
-                height: 100vh;
-                position: fixed;
-                padding: 40px;
-            }
-            .main-content {
-                margin-left: 200px;
-                padding: 20px;
-            }
+            z-index: 1; /* Make sure sidebar stays above other content */
         }
 
         .sidebar a {
-            color: #fff;
+            color: #333;
             text-decoration: none;
         }
 
@@ -78,12 +39,14 @@
             align-items: center;
         }
 
-        .sidebar .logo a {
-            color: #333;
-        }
-
         .sidebar .logo a:hover {
             color: #FFD700;
+        }
+
+        .name {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
         }
 
         /* Content styles */
@@ -99,15 +62,12 @@
         }
 
         .content {
-            padding: 20px;
             margin-left: 220px; /* Adjusted to accommodate the sidebar */
+            padding: 20px;
             display: flex;
             flex-wrap: wrap;
-        }
- .name {
-            font-size: 24px;
-            color: #333;
-            margin-bottom: 10px;
+            justify-content: space-around; /* Ensure space around project tiles */
+            align-content: flex-start;
         }
 
         .background {
@@ -135,13 +95,15 @@
         }
 
         .project-tile {
-            width: calc(50% - 40px); /* Adjusted for two tiles per row with some margin */
+            width: calc(45% - 20px); /* Adjusted for two tiles per row with space */
             margin: 10px;
             background-color: rgba(255, 255, 255, 0.1);
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
+            position: relative;
+            z-index: 0; /* Ensure tiles are above the background */
         }
 
         .project-tile:hover {
@@ -180,73 +142,76 @@
         .project-link:hover {
             text-decoration: underline;
         }
+
+        /* Responsive adjustments */
+        @media screen and (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+                padding: 20px;
+            }
+            .content {
+                margin-left: 0;
+                padding: 20px;
+            }
+            .project-tile {
+                width: calc(100% - 20px); /* Full width on smaller screens */
+            }
+        }
     </style>
 </head>
 <body>
-<div class="background"></div>
-<div class="container">
-    <!-- Sidebar -->
-    <div class="sidebar">
-<div class="name" >SSR</div>
-        <div class="logo">
-            <a href="index.html"><i class="fas fa-home"></i></a>
+    <div class="background"></div>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="name">SSR</div>
+            <div class="logo"><a href="index.html"><i class="fas fa-home"></i></a></div>
+            <div class="logo"><a href="about.html"><i class="fas fa-user"></i></a></div>
+            <div class="logo"><a href="skills.html"><i class="fas fa-cogs"></i></a></div>
+            <div class="logo"><a href="projects.html"><i class="fas fa-project-diagram"></i></a></div>
+            <div class="logo"><a href="certifications.html"><i class="fas fa-certificate"></i></a></div>
         </div>
-        <div class="logo">
-            <a href="about.html"><i class="fas fa-user"></i></a>
-        </div>
-        <div class="logo">
-            <a href="skills.html"><i class="fas fa-cogs"></i></a>
-        </div>
-        
-        <div class="logo">
-            <a href="projects.html"><i class="fas fa-project-diagram"></i></a>
-        </div>
-        <div class="logo">
-            <a href="certifications.html"><i class="fas fa-certificate"></i></a>
-        </div>
-    </div>
-    <!-- Content -->
-    
-
-    <div class="content">
-       
-        <!-- Project Tile 1 -->
-        <div class="project-tile">
-            <img class="project-image" src="img1.jpg" alt="covidsupportsystem">
-            <div class="project-details">
-                <div class="project-title">covidsupportsystem</div>
-                <div class="project-description">Python project to support COVID efforts.</div>
-                <a class="project-link" href="https://github.com/sai-sunandh/covidsupportsystem">View Project</a>
+        <!-- Content -->
+        <div class="content">
+            <!-- Project Tile 1 -->
+            <div class="project-tile">
+                <img class="project-image" src="img1.jpg" alt="covidsupportsystem">
+                <div class="project-details">
+                    <div class="project-title">covidsupportsystem</div>
+                    <div class="project-description">Python project to support COVID efforts.</div>
+                    <a class="project-link" href="https://github.com/sai-sunandh/covidsupportsystem">View Project</a>
+                </div>
             </div>
-        </div>
-        <!-- Project Tile 2 -->
-        <div class="project-tile">
-            <img class="project-image" src="img2.jpg" alt="covidunit">
-            <div class="project-details">
-                <div class="project-title">covidunit</div>
-                <div class="project-description">Python project for COVID unit management.</div>
-                <a class="project-link" href="https://github.com/sai-sunandh/covidunit">View Project</a>
+            <!-- Project Tile 2 -->
+            <div class="project-tile">
+                <img class="project-image" src="img2.jpg" alt="covidunit">
+                <div class="project-details">
+                    <div class="project-title">covidunit</div>
+                    <div class="project-description">Python project for COVID unit management.</div>
+                    <a class="project-link" href="https://github.com/sai-sunandh/covidunit">View Project</a>
+                </div>
             </div>
-        </div>
-        <!-- Project Tile 3 -->
-        <div class="project-tile">
-            <img class="project-image" src="img3.png" alt="CS567_Final_Project">
-            <div class="project-details">
-                <div class="project-title">CS567_Final_Project</div>
-                <div class="project-description">C++ project for course assignment.</div>
-                <a class="project-link" href="https://github.com/sai-sunandh/CS567_Final_Project">View Project</a>
+            <!-- Project Tile 3 -->
+            <div class="project-tile">
+                <img class="project-image" src="img3.png" alt="CS567_Final_Project">
+                <div class="project-details">
+                    <div class="project-title">CS567_Final_Project</div>
+                    <div class="project-description">C++ project for course assignment.</div>
+                    <a class="project-link" href="https://github.com/sai-sunandh/CS567_Final_Project">View Project</a>
+                </div>
             </div>
-        </div>
-        <!-- Project Tile 4 -->
-        <div class="project-tile">
-            <img class="project-image" src="img4.jpeg" alt="Covidtestingunit">
-            <div class="project-details">
-                <div class="project-title">Covidtestingunit</div>
-                <div class="project-description">HTML project for COVID testing unit.</div>
-                <a class="project-link" href="https://github.com/sai-sunandh/Covidtestingunit">View Project</a>
+            <!-- Project Tile 4 -->
+            <div class="project-tile">
+                <img class="project-image" src="img4.jpeg" alt="Covidtestingunit">
+                <div class="project-details">
+                    <div class="project-title">Covidtestingunit</div>
+                    <div class="project-description">HTML project for COVID testing unit.</div>
+                    <a class="project-link" href="https://github.com/sai-sunandh/Covidtestingunit">View Project</a>
+                </div>
             </div>
         </div>
     </div>
-</div>
 </body>
 </html>
