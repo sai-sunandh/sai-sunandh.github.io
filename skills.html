@@ -4,458 +4,325 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sai Sunandh Ramayanam - Skills</title>
-    <!-- Add necessary icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
-        /* Add your CSS styles here */
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        /* For screens with a maximum width of 768 pixels (typical tablet and mobile sizes) */
-        @media screen and (max-width: 768px) {
-            .container {
-                flex-direction: column;
-            }
-
-            .sidebar {
-                width: 100%;
-                height: auto;
-                position: relative;
-                padding: 20px;
-            }
-
-            .main-content {
-                margin-left: 0;
-                padding: 20px;
-            }
-        }
-
-        /* For screens with a minimum width of 768 pixels (typical laptop/desktop sizes) */
-        @media screen and (min-width: 768px) {
-            .container {
-                flex-direction: row;
-            }
-
-            .sidebar {
-                width: 200px;
-                height: 100vh;
-                position: fixed;
-                padding: 40px;
-            }
-
-            .main-content {
-                margin-left: 200px;
-                padding: 20px;
-            }
-        }
-
-        .background {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1; /* Ensure it stays behind other content */
-            background: linear-gradient(45deg, #4E54C8, #8F94FB, #FFD700, #FF5757); /* Gradient background */
-            background-size: 400% 400%; /* Larger background size for motion effect */
-            animation: gradientMotion 15s ease infinite; /* Animation for background motion */
-        }
-
-        @keyframes gradientMotion {
-            0% {
-                background-position: 0% 0%;
-            }
-
-            50% {
-                background-position: 100% 100%;
-            }
-
-            100% {
-                background-position: 0% 0%;
-            }
-        }
-
-        .container {
-            display: flex;
-        }
-
-        .sidebar {
-            background-color: rgba(255, 255, 255, 0.7);
-            color: #333;
-            width: 25px;
-            padding: 40px;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            position: fixed;
-            left: 0;
-            top: 0;
-            overflow-y: auto; /* Add scroll if content exceeds height */
-        }
-
-        .logo {
-            width: 50px;
-            height: 50px;
-            margin-bottom: 20px;
-            background-color: #fff;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .logo a {
-            color: #333;
-        }
-
-        .logo a:hover {
-            color: #ffd700;
-        }
-
-        .main-content {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            background-color: #f0f2f5;
             padding: 20px;
-            margin-left: 100px;
-                overflow-y: auto;
         }
 
-        /* Additional styles for Skills page */
         h1 {
+            text-align: center;
             color: #333;
-        }
-
-        h2 {
-            color: #555;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
+            margin-bottom: 30px;
         }
 
         .skill-category {
-            margin-bottom: 20px;
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .skill-category h2 {
-            margin-bottom: 10px;
-            display: flex;
-            align-items: center;
-            color: #333;
+            color: #4E54C8;
+            margin-bottom: 15px;
+            font-size: 1.2em;
         }
 
         .skill-item {
-            margin-bottom: 5px;
             display: flex;
+            justify-content: space-between;
             align-items: center;
+            padding: 5px 0;
         }
 
-        .skill-item i {
-            margin-right: 5px;
-            color: #666;
+        .rating i {
+            color: #FFD700;
+            margin-right: 3px;
         }
 
-        .rating {
-            color: #ffd700; /* Star color */
+        /* Skill Bar Styling */
+        .skill-bar {
+            background: #ddd;
+            border-radius: 4px;
+            overflow: hidden;
+            position: relative;
+            height: 10px;
+            width: 70%;
+        }
+
+        .skill-bar-fill {
+            height: 100%;
+            border-radius: 4px;
+            background: linear-gradient(45deg, #4E54C8, #8F94FB);
         }
     </style>
 </head>
 <body>
-<div class="background"></div>
-<div class="container">
-    <!-- Sidebar -->
-    <div class="sidebar">
-        <div class="logo">
-            <a href="index.html"><i class="fas fa-home"></i></a>
+    <h1>Skills</h1>
+    <!-- Payroll Management -->
+<div class="skill-category">
+    <h2>Payroll Management</h2>
+    <div class="skill-item">
+        <span>Wage Types, Payments, and Deductions</span>
+        <div class="skill-bar">
+            <div class="skill-bar-fill" style="width: 75%;"></div>
         </div>
-        <div class="logo">
-            <a href="about.html"><i class="fas fa-user"></i></a>
-        </div>
-        <div class="logo">
-            <a href="skills.html"><i class="fas fa-cogs"></i></a>
-        </div>
-        <div class="logo">
-            <a href="experience.html"><i class="fas fa-briefcase"></i></a>
-        </div>
-        <div class="logo">
-            <a href="projects.html"><i class="fas fa-project-diagram"></i></a>
-        </div>
-        <div class="logo">
-            <a href="certifications.html"><i class="fas fa-certificate"></i></a>
-        </div>
+        <span class="rating">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+        </span>
     </div>
-    <!-- Main Content -->
-    <div class="main-content">
-        <h1>Skills</h1>
-        <!-- Python -->
-        <div class="skill-category">
-            <h2><i class="fab fa-python"></i> Python (Programming Language)</h2>
-            <ul>
-                <li class="skill-item">Machine learning using Python <i class="fas fa-star rating"></i><i class="fas fa-star rating"></i><i class="fas fa-star rating"></i><i class="fas fa-star rating"></i><i class="far fa-star rating"></i></li>
-                <li class="skill-item">Data Analysis using Python <i class="fas fa-star rating"></i><i class="fas fa-star rating"></i><i class="fas fa-star rating"></i><i class="fas fa-star rating"></i><i class="far fa-star rating"></i></li>
-                <li class="skill-item">Disease Prediction Using Machine Learning <i class="fas fa-star rating"></i><i class="fas fa-star rating"></i><i class="far fa-star rating"></i><i class="far fa-star rating"></i><i class="far fa-star rating"></i></li>
-                <li class="skill-item">Deepstate <i class="fas fa-star rating"></i><i class="fas fa-star rating"></i><i class="far fa-star rating"></i><i class="far fa-star rating"></i><i class="far fa-star rating"></i></li>
-                <li class="skill-item">Logistic Regression <i class="fas fa-star rating"></i><i class="fas fa-star rating"></i><i class="far fa-star rating"></i><i class="far fa-star rating"></i><i class="far fa-star rating"></i></li>
-            </ul>
+    <div class="skill-item">
+        <span>Personnel Calculation Rules (PCRs) & Schemas</span>
+        <div class="skill-bar">
+            <div class="skill-bar-fill" style="width: 70%;"></div>
         </div>
-        <!-- DevOps -->
-        <div class="skill-category">
-            <h2><i class="fab fa-docker"></i> DevOps</h2>
-            <ul>
-                <li class="skill-item">Docker <i class="fas fa-star rating"></i><i class="fas fa-star rating"></i><i class="fas fa-star rating"></i><i class="fas fa-star rating"></i><i class="far fa-star rating"></i></li>
-            </ul>
+        <span class="rating">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+        </span>
+    </div>
+    <div class="skill-item">
+        <span>Tax Configurations & Benefits Integration</span>
+        <div class="skill-bar">
+            <div class="skill-bar-fill" style="width: 65%;"></div>
         </div>
-        <!-- Amazon Web Services -->
-        <div class="skill-category">
-            <h2><i class="fab fa-aws"></i> Amazon Web Services (AWS)</h2>
-            <ul>
-                <li class="skill-item">AWS <i class="fas fa-star rating"></i><i class="fas fa-star rating"></i><i class="fas fa-star rating"></i><i class="fas fa-star rating"></i><i class="far fa-star rating"></i></li>
-            </ul>
+        <span class="rating">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+        </span>
+    </div>
+    <div class="skill-item">
+        <span>Off-Cycle Payroll Processing</span>
+        <div class="skill-bar">
+            <div class="skill-bar-fill" style="width: 60%;"></div>
         </div>
-        <!-- Heroku -->
-        <div class="skill-category">
-            <h2><i class="fab fa-heroku"></i> Heroku</h2>
-            <ul>
-                <li class="skill-item">Heroku <i class="fas fa-star rating"></i><i class="fas fa-star rating"></i><i class="fas fa-star rating"></i><i class="fas fa-star rating"></i><i class="far fa-star rating"></i></li>
-            </ul>
-        </div>
-        <!-- SAP Fiori -->
-        <div class="skill-category">
-            <h2><i class="fab fa-sap"></i> SAP Fiori</h2>
-            <ul>
-                <li class="skill-item">SAP Fiori <i class="fas fa-star rating"></i><i class="fas fa-star rating"></i><i class="fas fa-star rating"></i><i class="fas fa-star rating"></i><i class="far fa-star rating"></i></li>
-            </ul>
-        </div>
-        <!-- Associate Software Engineer at Accenture -->
-        <div class="skill-category">
-            <h2>Associate Software Engineer at Accenture</h2>
-            <ul>
-                <li class="skill-item">SAP Fiori <i class="fas fa-star rating"></i><i class="fas fa-star rating"></i><i class="fas fa-star rating"></i><i class="fas fa-star rating"></i><i class="far fa-star rating"></i></li>
-            </ul>
-        </div>
-        <!-- Debugging -->
-        <div class="skill-category">
-            <h2>Debugging</h2>
-            <ul>
-                <li class="skill-item">Debugging <i class="fas fa-star rating"></i><i class="fas fa-star rating"></i><i class="far fa-star rating"></i><i class="far fa-star rating"></i><i class="far fa-star rating"></i></li>
-            </ul>
-        </div>
-        <!-- Teaching Assistant at Northern Arizona University -->
-        <div class="skill-category">
-            <h2>Teaching Assistant at Northern Arizona University</h2>
-            <ul>
-                <li class="skill-item">Teaching Assistant at Northern Arizona University <i class="fas fa-star rating"></i><i class="fas fa-star rating"></i><i class="far fa-star rating"></i><i class="far fa-star rating"></i><i class="far fa-star rating"></i></li>
-            </ul>
-        </div>
-        <!-- Educational Experiences -->
-        <div class="skill-category">
-            <h2>Educational Experiences</h2>
-            <ul>
-                <li class="skill-item">2 educational experiences at Northern Arizona University and 1 other school</li>
-            </ul>
-        </div>
-        <!-- Object-Oriented Programming (OOP) -->
-        <div class="skill-category">
-            <h2>Object-Oriented Programming (OOP)</h2>
-            <ul>
-                <li class="skill-item">Teaching Assistant at Northern Arizona University <i class="fas fa-star rating"></i><i class="fas fa-star rating"></i><i class="far fa-star rating"></i><i class="far fa-star rating"></i></li>
-            </ul>
-        </div>
-        <!-- Testing -->
-        <div class="skill-category">
-            <h2>Testing</h2>
-            <ul>
-                <li class="skill-item">Advance Software Assurance testing using Deepstate <i class="fas fa-star rating"></i><i class="fas fa-star rating"></i><i class="far fa-star rating"></i><i class="far fa-star rating"></i><i class="far fa-star rating"></i></li>
-            </ul>
-        </div>
-        <!-- Software Development -->
-        <div class="skill-category">
-            <h2>Software Development</h2>
-            <ul>
-                <li class="skill-item">Associate Software Engineer at Accenture</li>
-            </ul>
-        </div>
-        <!-- Data Analytics -->
-        <div class="skill-category">
-            <h2>Data Analytics</h2>
-            <ul>
-                <li class="skill-item">Data Analysis using Python <i class="fas fa-star rating"></i><i class="fas fa-star rating"></i><i class="fas fa-star rating"></i><i class="fas fa-star rating"></i><i class="far fa-star rating"></i></li>
-            </ul>
-        </div>
-        <!-- Data Warehousing -->
-        <div class="skill-category">
-            <h2>Data Warehousing</h2>
-            <ul>
-                <li class="skill-item">Building a new data warehouse using dimensional modeling</li>
-            </ul>
-        </div>
-        <!-- Algorithms -->
-        <div class="skill-category">
-            <h2>Algorithms</h2>
-            <ul>
-                <li class="skill-item">Data Structures</li>
-            </ul>
-        </div>
-        <!-- Web Development -->
-        <div class="skill-category">
-            <h2>Web Development</h2>
-            <ul>
-                <li class="skill-item">Web Development Using Django</li>
-            </ul>
-        </div>
-        <!-- Machine Learning -->
-        <div class="skill-category">
-            <h2>Machine Learning</h2>
-            <ul>
-                <li class="skill-item">Machine learning using Python</li>
-                <li class="skill-item">Disease Prediction Using Machine Learning</li>
-            </ul>
-        </div>
-        <!-- GitHub -->
-        <div class="skill-category">
-            <h2>GitHub</h2>
-            <ul>
-                <li class="skill-item">Teaching Assistant at Northern Arizona University</li>
-            </ul>
-        </div>
-        <!-- Jupyter -->
-        <div class="skill-category">
-            <h2>Jupyter</h2>
-            <ul>
-                <li class="skill-item">Disease Prediction Using Machine Learning</li>
-            </ul>
-        </div>
-        <!-- Seaborn -->
-        <div class="skill-category">
-            <h2>Seaborn</h2>
-            <ul>
-                <li class="skill-item">Data Analysis using Python</li>
-            </ul>
-        </div>
-        <!-- SAP ERP -->
-        <div class="skill-category">
-            <h2>SAP ERP</h2>
-            <ul>
-                <li class="skill-item">SAP ERP</li>
-            </ul>
-        </div>
-        <!-- SQL -->
-        <div class="skill-category">
-            <h2>SQL</h2>
-            <ul>
-                <li class="skill-item">SQL</li>
-                <li class="skill-item">Microsoft Access</li>
-                <li class="skill-item">MySQL</li>
-            </ul>
-        </div>
-        <!-- Docker -->
-        <div class="skill-category">
-            <h2>Docker</h2>
-            <ul>
-                <li class="skill-item">Docker</li>
-            </ul>
-        </div>
-        <!-- Amazon Web Services (AWS) -->
-        <div class="skill-category">
-            <h2>Amazon Web Services (AWS)</h2>
-            <ul>
-                <li class="skill-item">AWS</li>
-            </ul>
-        </div>
-        <!-- Microsoft Power BI -->
-        <div class="skill-category">
-            <h2>Microsoft Power BI</h2>
-            <ul>
-                <li class="skill-item">Microsoft Power BI</li>
-            </ul>
-        </div>
-        <!-- Databases -->
-        <div class="skill-category">
-            <h2>Databases</h2>
-            <ul>
-                <li class="skill-item">Pandas</li>
-                <li class="skill-item">MySQL</li>
-            </ul>
-        </div>
-        <!-- Django -->
-        <div class="skill-category">
-            <h2>Django</h2>
-            <ul>
-                <li class="skill-item">Django</li>
-            </ul>
-        </div>
-        <!-- R (Programming Language) -->
-        <div class="skill-category">
-            <h2>R (Programming Language)</h2>
-            <ul>
-                <li class="skill-item">R (Programming Language)</li>
-            </ul>
-        </div>
-        <!-- C (Programming Language) -->
-        <div class="skill-category">
-            <h2>C (Programming Language)</h2>
-            <ul>
-                <li class="skill-item">C (Programming Language)</li>
-            </ul>
-        </div>
-        <!-- C++ -->
-        <div class="skill-category">
-            <h2>C++</h2>
-            <ul>
-                <li class="skill-item">C++</li>
-            </ul>
-        </div>
-        <!-- SAP sales and distribution -->
-        <div class="skill-category">
-            <h2>SAP sales and distribution</h2>
-            <ul>
-                <li class="skill-item">SAP sales and distribution</li>
-            </ul>
-        </div>
-        <!-- Core java -->
-        <div class="skill-category">
-            <h2>Core java</h2>
-            <ul>
-                <li class="skill-item">Core java</li>
-            </ul>
-        </div>
-        <!-- Communication -->
-        <div class="skill-category">
-            <h2>Communication</h2>
-            <ul>
-                <li class="skill-item">Communication</li>
-            </ul>
-        </div>
-        <!-- Attention to Detail -->
-        <div class="skill-category">
-            <h2>Attention to Detail</h2>
-            <ul>
-                <li class="skill-item">Attention to Detail</li>
-            </ul>
-        </div>
-        <!-- Problem Solving -->
-        <div class="skill-category">
-            <h2>Problem Solving</h2>
-            <ul>
-                <li class="skill-item">Problem Solving</li>
-            </ul>
-        </div>
-        <!-- Campus Ambassador -->
-        <div class="skill-category">
-            <h2>Campus Ambassador</h2>
-            <ul>
-                <li class="skill-item">Campus Ambassador</li>
-            </ul>
-        </div>
+        <span class="rating">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+        </span>
     </div>
 </div>
+
+<!-- Benefits Administration -->
+<div class="skill-category">
+    <h2>Benefits Administration</h2>
+    <div class="skill-item">
+        <span>Health & Insurance Plans</span>
+        <div class="skill-bar">
+            <div class="skill-bar-fill" style="width: 80%;"></div>
+        </div>
+        <span class="rating">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+        </span>
+    </div>
+    <div class="skill-item">
+        <span>Flexible Spending Accounts (FSA)</span>
+        <div class="skill-bar">
+            <div class="skill-bar-fill" style="width: 70%;"></div>
+        </div>
+        <span class="rating">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+        </span>
+    </div>
+    <div class="skill-item">
+        <span>COBRA Administration</span>
+        <div class="skill-bar">
+            <div class="skill-bar-fill" style="width: 65%;"></div>
+        </div>
+        <span class="rating">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+        </span>
+    </div>
+    <div class="skill-item">
+        <span>Employee Enrollments & Terminations</span>
+        <div class="skill-bar">
+            <div class="skill-bar-fill" style="width: 75%;"></div>
+        </div>
+        <span class="rating">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+        </span>
+    </div>
+</div>
+
+<!-- Organizational Structure Design -->
+<div class="skill-category">
+    <h2>Organizational Structure Design</h2>
+    <div class="skill-item">
+        <span>Defining Objects & Relationships</span>
+        <div class="skill-bar">
+            <div class="skill-bar-fill" style="width: 70%;"></div>
+        </div>
+        <span class="rating">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+        </span>
+    </div>
+    <div class="skill-item">
+        <span>Managing Pay Structures</span>
+        <div class="skill-bar">
+            <div class="skill-bar-fill" style="width: 60%;"></div>
+        </div>
+        <span class="rating">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+        </span>
+    </div>
+    <div class="skill-item">
+        <span>Infotypes & Evaluation Paths</span>
+        <div class="skill-bar">
+            <div class="skill-bar-fill" style="width: 65%;"></div>
+        </div>
+        <span class="rating">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+        </span>
+    </div>
+</div>
+
+<!-- Personnel Administration -->
+<div class="skill-category">
+    <h2>Personnel Administration</h2>
+    <div class="skill-item">
+        <span>Enterprise & Personnel Structure Configuration</span>
+        <div class="skill-bar">
+            <div class="skill-bar-fill" style="width: 70%;"></div>
+        </div>
+        <span class="rating">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+        </span>
+    </div>
+    <div class="skill-item">
+        <span>Personnel Actions & Dynamic Actions</span>
+        <div class="skill-bar">
+            <div class="skill-bar-fill" style="width: 65%;"></div>
+        </div>
+        <span class="rating">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+        </span>
+    </div>
+    <div class="skill-item">
+        <span>PA/OM Integration & Payroll Data Management</span>
+        <div class="skill-bar">
+            <div class="skill-bar-fill" style="width: 75%;"></div>
+        </div>
+        <span class="rating">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+        </span>
+    </div>
+</div>
+
+    <!-- Python (Programming Language) -->
+    <div class="skill-category">
+        <h2>Python (Programming Language)</h2>
+        <div class="skill-item">
+            <span>Machine Learning</span>
+            <div class="skill-bar">
+                <div class="skill-bar-fill" style="width: 80%;"></div>
+            </div>
+            <span class="rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+            </span>
+        </div>
+        <div class="skill-item">
+            <span>Data Analysis</span>
+            <div class="skill-bar">
+                <div class="skill-bar-fill" style="width: 70%;"></div>
+            </div>
+            <span class="rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+            </span>
+        </div>
+    </div>
+
+    <!-- DevOps -->
+    <div class="skill-category">
+        <h2>DevOps</h2>
+        <div class="skill-item">
+            <span>Docker</span>
+            <div class="skill-bar">
+                <div class="skill-bar-fill" style="width: 75%;"></div>
+            </div>
+            <span class="rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+            </span>
+        </div>
+        <div class="skill-item">
+            <span>Jenkins</span>
+            <div class="skill-bar">
+                <div class="skill-bar-fill" style="width: 65%;"></div>
+            </div>
+            <span class="rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+            </span>
+        </div>
+    </div>
+
+    <!-- SAP Fiori -->
+    <div class="skill-category">
+        <h2>SAP Fiori</h2>
+        <div class="skill-item">
+            <span>UI5 Development</span>
+            <div class="skill-bar">
+                <div class="skill-bar-fill" style="width: 60%;"></div>
+            </div>
+            <span class="rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+            </span>
+        </div>
+        <div class="skill-item">
+            <span>OData Services</span>
+            <div class="skill-bar">
+                <div class="skill-bar-fill" style="width: 55%;"></div>
+            </div>
+            <span class="rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+            </span>
+        </div>
+    </div>
+
+    <!-- Machine Learning -->
+    <div class="skill-category">
+        <h2>Machine Learning</h2>
+        <div class="skill-item">
+            <span>Disease Prediction</span>
+            <div class="skill-bar">
+                <div class="skill-bar-fill" style="width: 60%;"></div>
+            </div>
+            <span class="rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+            </span>
+        </div>
+        <div class="skill-item">
+            <span>DeepState</span>
+            <div class="skill-bar">
+                <div class="skill-bar-fill" style="width: 50%;"></div>
+            </div>
+            <span class="rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+            </span>
+        </div>
+    </div>
+
+    <!-- Web Development -->
+    <div class="skill-category">
+        <h2>Web Development</h2>
+        <div class="skill-item">
+            <span>HTML/CSS</span>
+            <div class="skill-bar">
+                <div class="skill-bar-fill" style="width: 85%;"></div>
+            </div>
+            <span class="rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </span>
+        </div>
+        <div class="skill-item">
+            <span>JavaScript</span>
+            <div class="skill-bar">
+                <div class="skill-bar-fill" style="width: 70%;"></div>
+            </div>
+            <span class="rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+            </span>
+        </div>
+        
+    </div>
 </body>
 </html>
